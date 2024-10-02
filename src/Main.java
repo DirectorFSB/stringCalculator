@@ -42,10 +42,9 @@ public class Main {
         }else if(action == '-') {
             Arithmetic.subtraction(data[0] , data[1]);
         }else if ( action == '*'){
-
-        Arithmetic.multiplication(data[0] , parseInt(data[1]));
+            Arithmetic.multiplication(data[0] , data[1]);
         }else if (action == '/') {
-            Arithmetic.division(data[0], parseInt(data[1]));
+            Arithmetic.division(data[0], data[1]);
         }
 
     }
