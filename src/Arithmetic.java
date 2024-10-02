@@ -22,7 +22,11 @@ public class Arithmetic {
         System.out.println("\"" + result + "\"");
     }
     public static void multiplication(String first , String second){
-        System.out.println("\"" + first.repeat(parseInt(second)) + "\"");
+        String result = first.repeat(parseInt(second));
+        if(result.length() > 40) {
+            System.out.println("\"" +result.substring(0,40) + "...\"");
+        }else{System.out.println("\"" + result + "\"");}
+
     }
     public static void division(String first , String second){
         int wordsCount = first.length() / parseInt(second);
