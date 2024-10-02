@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Exception{
 
-    public static void InputExp(String first,String second ,char action) throws IOException {
+    public static void inputExp(String first,String second ,char action) throws IOException {
 
         if (first.length() > 10) {
             throw new IOException("Строка длинее 10 символов");
