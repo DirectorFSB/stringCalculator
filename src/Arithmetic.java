@@ -7,18 +7,9 @@ public class Arithmetic {
     }
 
     public static void subtraction(String first, String second){
-        String[] words = first.split(" ");
         String result ="";
-        int i = 0;
-        while(i < words.length){
-            if(words[i].equals(second) ) {
-            i++;
-            }else {
-                result += words[i];
-                i++;
-            }
-
-        }
+        int i = first.indexOf(second);
+        result =first.substring(0,i) +first.substring(i+second.length(),first.length()) ;
         System.out.println("\"" + result + "\"");
     }
     public static void multiplication(String first , String second){
